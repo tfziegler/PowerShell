@@ -13,10 +13,10 @@
 
 # Connect to the SCOM management group
 Import-Module OperationsManager
-New-SCOMManagementGroupConnection -ComputerName "OMMS1.LAB.AD"
+New-SCOMManagementGroupConnection -ComputerName "YOUR_MANAGEMENTSERVER_NAME"
 
 # Retrieve information about all agents
-$agents = Get-SCOMAgent -Name "test*.LAB.AD"
+$agents = Get-SCOMAgent -Name "Your_Agent(s)_Name"
 
 # File and location for results
 $outfile = "C:\Temp\test.txt"
