@@ -1,3 +1,16 @@
+###################################################################
+#
+# Title: SCOMAgentReportTime.ps1
+# Author: Tom Ziegler
+# Last Modified: 3-13-2023
+# Version: 1.0
+#
+# Description - This script checks the last time a selection of SCOM
+#               agents the last time they reported into SCOM.
+# 
+# THIS SCRIPT IS PROVIDED AS-IS WITH NO WARRANTY EITHER EXPRESSED OR IMPLIED
+###################################################################
+
 # Connect to the SCOM management group
 Import-Module OperationsManager
 New-SCOMManagementGroupConnection -ComputerName "OMMS1.LAB.AD"
